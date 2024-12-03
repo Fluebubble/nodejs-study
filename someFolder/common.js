@@ -3,4 +3,4 @@ module.exports = {
   type: "commonJs",
 };
 
-exports = 5;
+console.log("common.js", require.main === module);

@@ -2,6 +2,17 @@
   "type": "module",
   "dependencies": {
     "@types/node": "^22.10.1",
+    "express": "^4.21.2",
     "node": "^20.18.1"
-  }
+  },
+  "name": "nodejs-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,5 +1,5 @@
 import express from "express";
-import { tweetRouter } from "src/tweet/tweet.controller.js";
+import { tweetRouter } from "./tweet/tweet.controller.js";
 
 const app = express();
 

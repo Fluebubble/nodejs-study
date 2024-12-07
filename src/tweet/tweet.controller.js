@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createTweet } from "./tweet.service";
+import { createTweet } from "./tweet.service.js";
 
 export const tweetRouter = Router();
 

@@ -1,19 +1,22 @@
-import express from "express";
-import { tweetRouter } from "./tweet/tweet.controller.js";
+const check = (value) => {
+  if (value == undefined) {
+    console.log("Value is undefined");
+  }
 
-const app = express();
+  if (value == null) {
+    console.log("Value is null");
+  }
+  const type = typeof value;
 
-// import { DATA } from "./service.js";
-// console.log("keks", DATA);
+  if (!(value instanceof Date)) {
+    console.log("Value is not a Date");
+  }
 
-const main = async () => {
-  app.use(express.json());
-
-  app.use("/api/tweets", tweetRouter);
-
-  app.listen(4200, () => {
-    console.log("server is running on port 4200");
-  });
+  if (type === "Object") {
+    console.log("Value " + JSON.stringify(value) + " is an Object");
+  }
+  if (type != "Object") {
+    console.log("Value is a " + type);
+  }
 };
-
-main();
+check(123);

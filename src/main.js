@@ -1,24 +1,8 @@
-const check = (value) => {
-  if (value == undefined) {
-    console.log("Value is undefined");
-  }
+import dotenv from "dotenv";
+import minimist from "minimist";
 
-  if (value == null) {
-    console.log("Value is null");
-  }
-  const type = typeof value;
+dotenv.config();
 
-  if (!(value instanceof Date)) {
-    console.log("Value is not a Date");
-  }
+// console.log(`Hello kookoo ${process.env.x} and ${process.env.y}`);
 
-  if (type === "Object") {
-    console.log("Value " + JSON.stringify(value) + " is an Object");
-  }
-
-  if (type != "Object") {
-    console.log("Value is a " + type);
-  }
-};
-
-check(123);
+console.log(minimist(process.argv.slice(2)));

@@ -15,8 +15,10 @@ const check = (value) => {
   if (type === "Object") {
     console.log("Value " + JSON.stringify(value) + " is an Object");
   }
+
   if (type != "Object") {
     console.log("Value is a " + type);
   }
 };
+
 check(123);

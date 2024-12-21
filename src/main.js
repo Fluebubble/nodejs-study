@@ -1,3 +1,3 @@
-import { readFileTest } from "./workingWithFiles/readingFiles/readingFiles.js";
+import { writeFileTest } from "./workingWithFiles/writingFiles/writingFiles.js";
 
-readFileTest();
+writeFileTest();

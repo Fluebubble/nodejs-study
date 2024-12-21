@@ -1,8 +1,3 @@
-import dotenv from "dotenv";
-import minimist from "minimist";
+import { readFileTest } from "./workingWithFiles/readingFiles/readingFiles.js";
 
-dotenv.config();
-
-// console.log(`Hello kookoo ${process.env.x} and ${process.env.y}`);
-
-console.log(minimist(process.argv.slice(2)));
+readFileTest();

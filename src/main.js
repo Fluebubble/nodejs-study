@@ -1,3 +1,3 @@
-import { writeFileTest } from "./workingWithFiles/writingFiles/writingFiles.js";
+import { readFileTest } from "./workingWithFiles/syncAsyncMethods/syncAsyncMethods.js";
 
-writeFileTest();
+readFileTest();

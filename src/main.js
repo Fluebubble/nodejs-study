@@ -1,3 +1,3 @@
-import { checkIfFileExists } from "./workingWithFiles/checkIfFileExists/checkIfFileExists.js";
+import { usePromisesForFileOperations } from "./workingWithFiles/usePromisesForFileOperations/usePromisesForFileOperations.js";
 
-checkIfFileExists();
+usePromisesForFileOperations();

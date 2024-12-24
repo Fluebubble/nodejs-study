@@ -1,3 +1,3 @@
-import { readFileTest } from "./workingWithFiles/syncAsyncMethods/syncAsyncMethods.js";
+import { checkIfFileExists } from "./workingWithFiles/checkIfFileExists/checkIfFileExists.js";
 
-readFileTest();
+checkIfFileExists();

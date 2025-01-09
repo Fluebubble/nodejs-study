@@ -1,20 +1,28 @@
 import http from "http";
+import axios from "axios";
 
-const request = http.request("http://localhost1:3006/", (res) => {
-  console.log(res.statusCode);
+axios
+  .get("https://mate.academy/students-api/goods/245")
+  .then((res) => {
+    console.log(res.status);
+    console.log(res.data);
+  })
+  .catch((error) => console.log(error));
 
-  res.setEncoding("utf8");
+// const request = http.request("http://localhost1:3006/", (res) => {
+//   console.log(res.statusCode);
 
-  res.on("data", (data) => {
-    console.log(data);
+//   res.setEncoding("utf8");
 
-    // process.stdout.write(data);
-  });
-  
-});
+//   res.on("data", (data) => {
+//     console.log(data);
 
-request.on('error', (e) => {
-  console.error(`problem with request: ${e.message}`);
-});
+//     // process.stdout.write(data);
+//   });
+// });
 
-request.end();
+// request.on("error", (e) => {
+//   console.error(`problem with request: ${e.message}`);
+// });
+
+// request.end();

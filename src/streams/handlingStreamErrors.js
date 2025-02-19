@@ -23,4 +23,6 @@ server.on("request", (req, res) => {
   }
 });
 
+server.on("error", () => {});
+
 server.listen(3005);

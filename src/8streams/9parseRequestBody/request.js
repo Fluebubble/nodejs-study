@@ -1,13 +1,14 @@
 import http from "http";
 
-const url = "http://localhost:3005";
+const url = "http://localhost:5701/add-expense";
 const option = {
   method: "POST",
 };
 
 const data = {
-  name: "GENA",
-  profession: "farmer",
+  date: "2024-01-25",
+  title: "Test Expense",
+  amount: "100",
 };
 
 const req = http.request(url, option, (res) => {
